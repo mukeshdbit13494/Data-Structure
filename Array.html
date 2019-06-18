@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Example</title>
+	
+</head>
+<body>
+	<p id="show"></p>
+
+		<input type="text" id="arrayElement">
+		<button onclick="arrayExample()">show And Insert</button>
+		<button onclick="arrayReverse()">Reverse</button>
+		<button onclick="arraySort()">sort</button>
+	<script type="">
+		var arr=['12','35','mukesh','singh'];
+	    document.getElementById("show").innerHTML=arr;
+		function arrayExample(){
+			var element=document.getElementById("arrayElement").value;
+			arr.push(element);
+			document.getElementById("show").innerHTML=arr;
+		}
+		function arrayReverse(){
+			arr.reverse();
+			document.getElementById("show").innerHTML=arr;
+		}
+		function arraySort(){
+			arr.sort();
+			document.getElementById("show").innerHTML=arr;
+		}
+	</script>
+</body>
+</html>

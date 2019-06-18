@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stack Example</title>
+</head>
+<body>
+	<p id="show"></p>
+	<input type="text" id="elements">
+	<button onclick="stackAdd()">Add</button>
+	<button onclick="stackDelete()">Delete</button>
+	<script type="text/javascript">
+		var stack=[];
+		stack.push(20);
+		stack.push("mukesh");
+		stack.push("singh");
+		 document.getElementById("show").innerHTML=stack;
+		 function stackAdd(){
+		 	var ele=document.getElementById('elements').value;
+		 	stack.push(ele);
+		 	document.getElementById("show").innerHTML=stack;
+		 }
+		  function stackDelete(){
+		 	stack.pop();
+		 	document.getElementById("show").innerHTML=stack;
+		 }
+	</script>
+</body>
+</html>
